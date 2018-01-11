@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
   printf("\x1b[32;1m[+]\x1b[0m Exit with \x1b[37;1mCtrl+C\x1b[0m if you are done reading the secret\n");
   while (1) {
     printf("%s\n", secret);
-    tv.tv_sec = 1;
+    tv.tv_sec = 999999;
     tv.tv_usec = 0;
     select(0,0,0,0,&tv);
   }
